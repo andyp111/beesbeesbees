@@ -5,6 +5,9 @@ var Grub = function() {
 };
 
 Grub.prototype.eat = function(string) {
-  this.food.pop(); //fix this
-  return this;
+  if (string === this.food) {
+    return 'I have eaten jelly';
+  } else {
+    return 'I can\'t eat this'
+  }
 }
